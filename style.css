@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url(background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header {
+  display: flex;
+  background-color: rgba(199, 199, 206, 0.87);
+  width: 100%;
+  justify-content: space-between;
+}
+
+.logo-container {
+  margin: 10px;
+}
+.logo-container h1 {
+  font-size: 16px;
+  padding: 10px;
+  font-family: monospace;
+  background-color: white;
+  border-top-left-radius: 10px;
+  transition: 0.3s;
+}
+.logo-container h1:hover {
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white;
+  background-color: black;
+  transition: 0.6s ease-in 0.3s;
+}
+.header-navigator {
+  margin-top: 10px;
+}
+.header-navigator-bar {
+  display: flex;
+  margin-top: 10px;
+  list-style-type: none;
+}
+.form-section {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.btn-top-left-radius {
+  border-top-left-radius: 10px;
+}
+.btn-bottom-right-radius {
+  border-bottom-right-radius: 10px;
+}
+.header-navigator-bar a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  margin-left: 2px;
+  font-family: monospace;
+}
+.header-navigator-bar a:hover {
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  transition: 0.3s ease-in;
+}
+/* for tablet*/
+@media (max-width: 666px) {
+  .header-navigator {
+    margin-top: 5px;
+    transition: 1s ease-in-out 0.2s;
+  }
+  .header-navigator-bar a {
+    font-size: 0.8em;
+  }
+  .logo-container {
+    margin-top: 12px;
+    transition: 1s ease-in-out 0.3s;
+  }
+  .logo-container h1 {
+    font-size: 0.8em;
+  }
+  .form-section {
+    margin-top: 5px;
+    transition: 1s ease-in-out 0.2s;
+  }
+}
+/* for responive  start*/
+@media (max-width: 556px) {
+  .header-navigator-bar a {
+    font-size: 0.7em;
+    padding: 8px;
+  }
+  .logo-container h1 {
+    font-size: 0.8em;
+    padding: 8px;
+  }
+}
+@media (max-width: 480px) {
+  .header-navigator {
+    margin-top: 10px;
+  }
+  .header-navigator-bar a {
+    padding: 4px;
+  }
+  .logo-container h1 {
+    padding: 4px;
+    margin-top: 9px;
+  }
+  .form-section {
+    padding: 4px;
+  }
+}
+@media (max-width: 435px) {
+  .header-navigator-bar a {
+    padding: 1px;
+    font-size: 0.2em;
+  }
+  .logo-container {
+    margin-top: 16px;
+  }
+  .logo-container h1 {
+    padding: 2px;
+    font-size: 0.2em;
+  }
+}
